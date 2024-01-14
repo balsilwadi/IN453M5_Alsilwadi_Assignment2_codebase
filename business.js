@@ -1,8 +1,8 @@
-const Database = require('../IN453M2_Alsilwadi_Assignments/my-web-app/database');
+const Database = require('./database.js');
 
 class BusinessLayer {
-    constructor(dbConfig) {
-        this.db = new Database(dbConfig);
+    constructor() {
+        this.db = new Database(config.dbConfig); // Using externalized config
     }
 
     async initialize() {
